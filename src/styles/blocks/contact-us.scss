@@ -71,6 +71,10 @@
     flex-direction: column;
   }
 
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #8f99a8;
+  }
+
   &__input {
     width: $form-width;
     height: 20px;
@@ -93,5 +97,10 @@
     @include onDesktop {
       width: 411px;
     }
+  }
+
+  &__input::placeholder,
+  &__textarea::placeholder {
+    color: #8f99a8;
   }
 }
